@@ -1,0 +1,29 @@
+
+.page-background {
+  background: url('../../assets/images/banner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.form-bg{
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  height: 300px;
+  border: 2px solid #fff;
+  opacity: .9;
+}
+.logo{
+  text-align: center;
+  margin: 5px;
+}
+.logo img{
+  width: 150px;
+  height: 100px;
+}
+.form-box{
+  margin-top: 100px;
+}
+

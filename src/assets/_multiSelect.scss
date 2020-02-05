@@ -1,0 +1,36 @@
+.multiselect-dropdown{
+    font-size: 11px !important;
+}
+.dropdown-list{
+    width: inherit !important;
+    min-width: 175px !important;
+}
+.multiselect-dropdown .dropdown-btn{
+    min-width: 175px !important;
+    width: inherit !important;
+    padding: 3px 5px !important;
+    line-height:14px !important;
+}
+.multiselect-dropdown .dropdown-btn .selected-item {
+  border: 1px solid $color-blue !important;
+  background: $color-blue !important;
+}
+.multiselect-item-checkbox input[type='checkbox'] + div:before {
+  color: $color-blue !important;
+  position: absolute;
+  border: 2px solid $color-blue !important;
+}
+.multiselect-item-checkbox input[type='checkbox']:checked + div:before {
+  background: $color-blue !important;
+}
+.no-data h5{
+    font-size: 14px !important;
+}
+.multiselect-dropdown .disabled .dropdown-btn {
+  background-color: #D3D3D3 !important;
+}
+
+.multiselect-dropdown .disabled+.dropdown-list {
+  background-color: #D3D3D3 !important;
+  cursor: not-allowed !important;
+}

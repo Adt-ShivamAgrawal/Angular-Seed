@@ -1,0 +1,33 @@
+thead {
+    line-height: 15px;
+    font-size: 15px;
+    // width: calc( 100% - 1em );
+    color: #fff;
+    background: linear-gradient(180deg, $color-blue, $color-blue-light);
+}
+tbody {
+    font-size: 12px;
+    line-height: 15px;
+    border-left: 1px solid $color-overlay;
+    border-bottom: 1px solid $color-overlay;
+}
+.table td, .table th {
+vertical-align: middle !important;
+}
+.first-col{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    background-color: $color-orange-light;
+}
+.table-fixed{
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 375px;
+//   max-width: 1200px;
+}
+.table-fixed-header{
+    width: calc( 100% - 1em );
+    margin-bottom: 0px !important;
+}

@@ -1,0 +1,33 @@
+.tab-header{
+    line-height: 2;
+    background-color: #efefef;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    max-height: 30px;
+    border-radius: 5px;
+  }
+ .tab-header.active:before {
+  content: "♦";
+  position: absolute;
+  top: 67px;
+  left: 60px;
+  color: #e56d0e;
+  font-size: 50px;
+}
+.tab-header.active, .tab-header:hover {
+     color: #fff;
+    background: linear-gradient(180deg, #d44119, #e56d0e);
+    border-bottom: 1px solid #e56d0e;
+    border-radius: 5px;
+}
+.tab-header.active:before {
+    content: "♦";
+    position: absolute;
+    top: -3px;
+    left: 130px;
+    color: #e56d0e;
+    font-size: 30px;
+  }

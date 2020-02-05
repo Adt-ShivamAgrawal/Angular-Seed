@@ -1,0 +1,40 @@
+<div class="row m-0 page-background">
+    <div class="form-bg vertically-center col-4">
+        <div class="logo fixed-top">
+            <img src="assets/images/logo.png" />
+        </div>
+        <div class="row">
+            <form [formGroup]="loginForm" class="col-12 form-box" (submit)="submitLoginForm();">
+                <div class="form-group row m-0 mt-3">
+                    <div class="col-md-8 offset-2 p-0">
+                        <input class="form-control form-control-sm" placeholder="User ID"
+                            [ngClass]="{ 'is-invalid': isSubmitted && loginForm.controls?.userName?.errors }"
+                            id="userName" type="text" formControlName="userName" />
+                        <span class="input-error"
+                            *ngIf="loginForm.controls?.userName?.errors?.required && isSubmitted">Required</span>
+                    </div>
+                </div>
+                <div class="form-group row m-0 mt-1">
+                    <div class="col-md-8 offset-2 p-0">
+                        <input class="form-control form-control-sm" placeholder="Password"
+                            [ngClass]="{ 'is-invalid': isSubmitted && loginForm.controls?.password?.errors }"
+                            id="password" type="password" formControlName="password" />
+                        <span class="input-error"
+                            *ngIf="loginForm.controls?.password?.errors?.required && isSubmitted">Required</span>
+                    </div>
+                </div>
+                <div class="form-group row m-0 mt-3">
+                    <button class="btn btn-primary btn-sm float-right col-md-8 offset-2" type="submit"
+                        [disabled]="isLogging">
+                        <span *ngIf="isLogging" class="spinner-border spinner-border-sm" role="status"
+                            aria-hidden="true"></span>
+                        {{isLogging ? 'Logging..' : 'Login'}}
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="text-center small fixed-bottom mb-1">
+            {{copyRightText}}
+        </div>
+    </div>
+</div>
